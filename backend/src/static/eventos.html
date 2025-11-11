@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos e Cronograma - Circuito Empreenda Tur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/logo.png" alt="Circuito Empreenda Tur" class="logo-img"></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="eventos.html" class="nav-link active">Eventos</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="meus_certificados.html" class="nav-link">Meus Certificados</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema"><i class="fas fa-sun"></i></button>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="cadastro.html" class="btn btn-primary">Cadastre-se</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb fade-in-up"><a href="index.html">Home</a> <span>/</span> <span>Eventos</span></div>
+                <h1 class="page-title fade-in-up delay-1">Cronograma de Eventos</h1>
+                <p class="page-subtitle fade-in-up delay-2">Descubra todas as edições do Circuito Empreenda Tur e os próximos destinos.</p>
+            </div>
+        </section>
+
+        <section class="timeline-overview">
+            <div class="container">
+                <h2 class="section-title reveal">Nossa Jornada pelo Brasil</h2>
+                <div class="timeline">
+                    <div class="timeline-item reveal" data-event="ribeirao-pires">
+                        <div class="timeline-marker"><div class="timeline-number">1</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Ago 2023</div>
+                            <h3 class="timeline-title">Ribeirão Pires, SP</h3>
+                            <p class="timeline-description">Primeira Edição</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="pirajui">
+                        <div class="timeline-marker"><div class="timeline-number">2</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Mai 2024</div>
+                            <h3 class="timeline-title">Pirajuí, SP</h3>
+                            <p class="timeline-description">Segunda Edição</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="dracena">
+                        <div class="timeline-marker"><div class="timeline-number">3</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Mai 2024</div>
+                            <h3 class="timeline-title">Dracena, SP</h3>
+                            <p class="timeline-description">Terceira Edição</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="presidente-prudente">
+                        <div class="timeline-marker"><div class="timeline-number">4</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Jun 2024</div>
+                            <h3 class="timeline-title">Presidente Prudente, SP</h3>
+                            <p class="timeline-description">Quarta Edição</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="tupa">
+                        <div class="timeline-marker"><div class="timeline-number">5</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Ago 2024</div>
+                            <h3 class="timeline-title">Tupã, SP</h3>
+                            <p class="timeline-description">Quinta Edição</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="pardinho">
+                        <div class="timeline-marker"><div class="timeline-number">6</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Set 2024</div>
+                            <h3 class="timeline-title">Pardinho, SP</h3>
+                            <p class="timeline-description">Sexta Edição</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="itapetininga">
+                        <div class="timeline-marker"><div class="timeline-number">7</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Nov 2024</div>
+                            <h3 class="timeline-title">Itapetininga, SP</h3>
+                            <p class="timeline-description">Sétima Edição</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="mairipora">
+                        <div class="timeline-marker"><div class="timeline-number">8</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Dez 2024</div>
+                            <h3 class="timeline-title">Mairiporã, SP</h3>
+                            <p class="timeline-description">Oitava Edição</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="monte-alegre-do-sul">
+                        <div class="timeline-marker"><div class="timeline-number">9</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Fev 2025</div>
+                            <h3 class="timeline-title">Monte Alegre do Sul, SP</h3>
+                            <p class="timeline-description">Nona Edição</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="porangaba">
+                        <div class="timeline-marker"><div class="timeline-number">10</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Mar 2025</div>
+                            <h3 class="timeline-title">Porangaba, SP</h3>
+                            <p class="timeline-description">Décima Edição</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="mineiros-do-tiete">
+                        <div class="timeline-marker"><div class="timeline-number">11</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Abr 2025</div>
+                            <h3 class="timeline-title">Mineiros do Tietê, SP</h3>
+                            <p class="timeline-description">Décima Primeira Edição</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="pauliceia">
+                        <div class="timeline-marker"><div class="timeline-number">12</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Mai 2025</div>
+                            <h3 class="timeline-title">Paulicéia, SP</h3>
+                            <p class="timeline-description">Décima Segunda Edição</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="caconde">
+                        <div class="timeline-marker"><div class="timeline-number">13</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Jun 2025</div>
+                            <h3 class="timeline-title">Caconde, SP</h3>
+                            <p class="timeline-description">Décima Terceira Edição</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="ilha-comprida">
+                        <div class="timeline-marker"><div class="timeline-number">14</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Jul 2025</div>
+                            <h3 class="timeline-title">Ilha Comprida, SP</h3>
+                            <p class="timeline-description">Décima Quarta Edição</p>
+                        </div>
+                    </div>
+                    <!-- Próximos Eventos Fictícios -->
+                    <div class="timeline-item reveal" data-event="gramado">
+                        <div class="timeline-marker"><div class="timeline-number">15</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Nov 2025</div>
+                            <h3 class="timeline-title">Gramado, RS</h3>
+                            <p class="timeline-description">Encantos da Serra Gaúcha</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="camacari">
+                        <div class="timeline-marker"><div class="timeline-number">16</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Jan 2026</div>
+                            <h3 class="timeline-title">Camaçari, BA</h3>
+                            <p class="timeline-description">Sol, Mar e Negócios</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="foz">
+                        <div class="timeline-marker"><div class="timeline-number">17</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Mar 2026</div>
+                            <h3 class="timeline-title">Foz do Iguaçu, PR</h3>
+                            <p class="timeline-description">Ecoturismo e Sustentabilidade</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="bonito">
+                        <div class="timeline-marker"><div class="timeline-number">18</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Mai 2026</div>
+                            <h3 class="timeline-title">Bonito, MS</h3>
+                            <p class="timeline-description">Aventura e Natureza</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-event="paraty">
+                        <div class="timeline-marker"><div class="timeline-number">19</div></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Jul 2026</div>
+                            <h3 class="timeline-title">Paraty, RJ</h3>
+                            <p class="timeline-description">Cultura e História</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-detailed">
+            <div class="container">
+                <!-- Ribeirão Pires Event -->
+                <div id="ribeirao-pires" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/ribeirao-pires.jpg" alt="Ribeirão Pires, SP" loading="lazy">
+                            <div class="event-status past">Edição Anterior</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#01</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Ribeirão Pires, São Paulo</span>
+                            </div>
+                            <h2 class="event-detail-title">Primeira Edição: O Marco Inicial do Empreenda Tur</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 19 de Agosto de 2023</div>
+                            <p class="event-detail-description">A primeira edição do Empreenda Tur ocorreu no município de Ribeirão Pires, servindo de modelo e inspiração para todas as edições futuras. Um evento que marcou o início de uma jornada de sucesso no fomento ao turismo regional.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pirajuí Event -->
+                <div id="pirajui" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/pirajui.jpg" alt="Pirajuí, SP" loading="lazy">
+                            <div class="event-status past">Edição Anterior</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#02</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Pirajuí, São Paulo</span>
+                            </div>
+                            <h2 class="event-detail-title">Segunda Edição: Expansão pelo Interior Paulista</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 17 de Maio de 2024</div>
+                            <p class="event-detail-description">A segunda edição do Empreenda Tur levou a iniciativa para Pirajuí, consolidando a presença do evento no interior de São Paulo e expandindo seu alcance para novas comunidades.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dracena Event -->
+                <div id="dracena" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/dracena.jpg" alt="Dracena, SP" loading="lazy">
+                            <div class="event-status past">Edição Anterior</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#03</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Dracena, São Paulo</span>
+                            </div>
+                            <h2 class="event-detail-title">Terceira Edição: Consolidação e Apoio Institucional</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 24 de Maio de 2024</div>
+                            <p class="event-detail-description">Em Dracena, a terceira edição do Empreenda Tur contou com a participação de autoridades, reforçando o apoio institucional à iniciativa e seu impacto no desenvolvimento turístico regional.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Presidente Prudente Event -->
+                <div id="presidente-prudente" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/presidente-prudente.jpg" alt="Presidente Prudente, SP" loading="lazy">
+                            <div class="event-status past">Edição Anterior</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#04</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Presidente Prudente, São Paulo</span>
+                            </div>
+                            <h2 class="event-detail-title">Quarta Edição: Estimulando o Turismo Regional</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 23 de Junho de 2024</div>
+                            <p class="event-detail-description">Presidente Prudente sediou a quarta edição, com foco em estimular o turismo regional e a inovação no setor, gerando novas oportunidades para a comunidade local.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tupã Event -->
+                <div id="tupa" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/tupa.jpg" alt="Tupã, SP" loading="lazy">
+                            <div class="event-status past">Edição Anterior</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#05</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Tupã, São Paulo</span>
+                            </div>
+                            <h2 class="event-detail-title">Quinta Edição: Destaque para o Turismo Rural</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 17 de Agosto de 2024</div>
+                            <p class="event-detail-description">Em Tupã, a quinta edição do Empreenda Tur colocou em pauta o turismo rural, discutindo seu potencial e as melhores práticas para o desenvolvimento sustentável da região.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pardinho Event -->
+                <div id="pardinho" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/pardinho.jpg" alt="Pardinho, SP" loading="lazy">
+                            <div class="event-status past">Edição Anterior</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#06</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Pardinho, São Paulo</span>
+                            </div>
+                            <h2 class="event-detail-title">Sexta Edição: Foco na Cuesta Paulista</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 27 de Setembro de 2024</div>
+                            <p class="event-detail-description">Pardinho recebeu a sexta edição do Empreenda Tur, com foco no turismo da Cuesta Paulista, impulsionando a economia local e valorizando as belezas naturais da região.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Itapetininga Event -->
+                <div id="itapetininga" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/itapetininga.jpg" alt="Itapetininga, SP" loading="lazy">
+                            <div class="event-status past">Edição Anterior</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#07</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Itapetininga, São Paulo</span>
+                            </div>
+                            <h2 class="event-detail-title">Sétima Edição: Empreendedorismo e Cultura</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 09 de Novembro de 2024</div>
+                            <p class="event-detail-description">Itapetininga sediou a sétima edição, um evento gratuito sobre empreendedorismo que também celebrou a música caipira e ofereceu serviços à população, unindo cultura e negócios.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mairiporã Event -->
+                <div id="mairipora" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/mairipora.jpg" alt="Mairiporã, SP" loading="lazy">
+                            <div class="event-status past">Edição Anterior</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#08</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Mairiporã, São Paulo</span>
+                            </div>
+                            <h2 class="event-detail-title">Oitava Edição: Conexão com o Setor Produtivo Turístico</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 12 de Dezembro de 2024</div>
+                            <p class="event-detail-description">Mairiporã recebeu a oitava edição do Empreenda Tur, reforçando sua vocação como destino turístico e econômico e promovendo uma grande conexão com o setor produtivo local.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monte Alegre do Sul Event -->
+                <div id="monte-alegre-do-sul" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/monte-alegre-do-sul.jpg" alt="Monte Alegre do Sul, SP" loading="lazy">
+                            <div class="event-status past">Edição Anterior</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#09</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Monte Alegre do Sul, São Paulo</span>
+                            </div>
+                            <h2 class="event-detail-title">Nona Edição: Potência do Circuito das Águas</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 07 de Fevereiro de 2025</div>
+                            <p class="event-detail-description">Monte Alegre do Sul, no Circuito das Águas Paulista, sediou a nona edição, evidenciando a potência da região para o turismo e impulsionando o desenvolvimento local.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Porangaba Event -->
+                <div id="porangaba" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/porangaba.jpg" alt="Porangaba, SP" loading="lazy">
+                            <div class="event-status past">Edição Anterior</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#10</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Porangaba, São Paulo</span>
+                            </div>
+                            <h2 class="event-detail-title">Décima Edição: Capacitação e Financiamento</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 31 de Março de 2025</div>
+                            <p class="event-detail-description">A décima edição em Porangaba ofereceu capacitação e acesso a financiamento com juros reduzidos, impulsionando o turismo e o empreendedorismo na região.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mineiros do Tietê Event -->
+                <div id="mineiros-do-tiete" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/mineiros-do-tiete.jpg" alt="Mineiros do Tietê, SP" loading="lazy">
+                            <div class="event-status past">Edição Anterior</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#11</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Mineiros do Tietê, São Paulo</span>
+                            </div>
+                            <h2 class="event-detail-title">Décima Primeira Edição: Caminhos do Tietê</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 26 de Abril de 2025</div>
+                            <p class="event-detail-description">Mineiros do Tietê recebeu a décima primeira edição, movimentando a Região Turística Caminhos do Tietê com foco em turismo e empreendedorismo, mostrando a força local.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paulicéia Event -->
+                <div id="pauliceia" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/pauliceia.jpg" alt="Paulicéia, SP" loading="lazy">
+                            <div class="event-status past">Edição Anterior</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#12</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Paulicéia, São Paulo</span>
+                            </div>
+                            <h2 class="event-detail-title">Décima Segunda Edição: Impulsionando o Turismo</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 31 de Maio de 2025</div>
+                            <p class="event-detail-description">Paulicéia sediou a décima segunda edição, impulsionando o turismo local e debatendo políticas públicas para o empreendedorismo e turismo sustentável na região.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caconde Event -->
+                <div id="caconde" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/caconde.jpg" alt="Caconde, SP" loading="lazy">
+                            <div class="event-status past">Edição Anterior</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#13</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Caconde, São Paulo</span>
+                            </div>
+                            <h2 class="event-detail-title">Décima Terceira Edição: Fortalecendo Negócios Locais</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 28 de Junho de 2025</div>
+                            <p class="event-detail-description">Em Caconde, a décima terceira edição do Empreenda Tur impulsionou o turismo e os negócios locais, com a participação do Sebrae-SP, fortalecendo o empreendedorismo na região.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ilha Comprida Event -->
+                <div id="ilha-comprida" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/ilha-comprida.jpg" alt="Ilha Comprida, SP" loading="lazy">
+                            <div class="event-status past">Edição Anterior</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#14</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Ilha Comprida, São Paulo</span>
+                            </div>
+                            <h2 class="event-detail-title">Décima Quarta Edição: Fortalecimento do Turismo Regional</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 19 de Julho de 2025</div>
+                            <p class="event-detail-description">Ilha Comprida sediou a décima quarta edição, com foco no fortalecimento do turismo regional e empreendedorismo, incluindo a inauguração de um Centro de Eventos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Próximos Eventos Fictícios -->
+                <div id="gramado" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/gramado.jpg" alt="Gramado, RS" loading="lazy">
+                            <div class="event-status">Próximo Evento</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#15</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Gramado, Rio Grande do Sul</span>
+                            </div>
+                            <h2 class="event-detail-title">Encantos da Serra Gaúcha: Turismo de Experiência</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 08 a 10 de Novembro de 2025</div>
+                            <p class="event-detail-description">Três dias de imersão na capital do turismo de inverno no Brasil. Explore as tendências em hotelaria de charme, enoturismo e gastronomia local em um dos destinos mais encantadores do país.</p>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <a href="#inscricao" class="btn btn-primary btn-large">Garantir Minha Vaga</a>
+                        <a href="#info" class="btn btn-outline">Mais Informações</a>
+                    </div>
+                </div>
+
+                <div id="camacari" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/camacari.jpg" alt="Camaçari, BA" loading="lazy">
+                            <div class="event-status upcoming">Em Breve</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#16</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Camaçari, Bahia</span>
+                            </div>
+                            <h2 class="event-detail-title">Costa dos Coqueiros: Sol, Mar e Negócios</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 17 a 19 de Janeiro de 2026</div>
+                            <p class="event-detail-description">Evento pé na areia focado no turismo de lazer, resorts, esportes aquáticos e a rica cultura baiana. Networking em um ambiente paradisíaco da Costa dos Coqueiros.</p>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <a href="#inscricao" class="btn btn-primary btn-large">Garantir Minha Vaga</a>
+                        <a href="#info" class="btn btn-outline">Mais Informações</a>
+                    </div>
+                </div>
+
+                <div id="foz" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/foz-do-iguacu.jpg" alt="Foz do Iguaçu, PR" loading="lazy">
+                            <div class="event-status upcoming">Em Breve</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#17</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Foz do Iguaçu, Paraná</span>
+                            </div>
+                            <h2 class="event-detail-title">Maravilhas Naturais: Ecoturismo e Sustentabilidade</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 12 a 14 de Março de 2026</div>
+                            <p class="event-detail-description">Explore o potencial do ecoturismo e da sustentabilidade em um dos cenários naturais mais impressionantes do mundo. Debates sobre conservação e desenvolvimento turístico responsável.</p>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <a href="#inscricao" class="btn btn-primary btn-large">Garantir Minha Vaga</a>
+                        <a href="#info" class="btn btn-outline">Mais Informações</a>
+                    </div>
+                </div>
+
+                <div id="bonito" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/bonito.jpg" alt="Bonito, MS" loading="lazy">
+                            <div class="event-status upcoming">Em Breve</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#18</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Bonito, Mato Grosso do Sul</span>
+                            </div>
+                            <h2 class="event-detail-title">Aventura e Natureza: Ecoturismo de Alto Nível</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 22 a 24 de Maio de 2026</div>
+                            <p class="event-detail-description">Descubra as melhores práticas em turismo de aventura e ecoturismo em um dos destinos mais premiados do Brasil. Workshops sobre gestão de atrativos naturais e segurança.</p>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <a href="#inscricao" class="btn btn-primary btn-large">Garantir Minha Vaga</a>
+                        <a href="#info" class="btn btn-outline">Mais Informações</a>
+                    </div>
+                </div>
+
+                <div id="paraty" class="event-detail reveal">
+                    <div class="event-detail-header">
+                        <div class="event-detail-image">
+                            <img src="assets/destinos/paraty.jpg" alt="Paraty, RJ" loading="lazy">
+                            <div class="event-status upcoming">Em Breve</div>
+                        </div>
+                        <div class="event-detail-info">
+                            <div class="event-meta">
+                                <span class="event-number">#19</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Paraty, Rio de Janeiro</span>
+                            </div>
+                            <h2 class="event-detail-title">História e Cultura: Patrimônio Mundial e Turismo</h2>
+                            <div class="event-date-range"><i class="fas fa-calendar-alt"></i> 10 a 12 de Julho de 2026</div>
+                            <p class="event-detail-description">Imersão na rica história e cultura de Paraty, Patrimônio Mundial da UNESCO. Debates sobre a preservação do patrimônio e o desenvolvimento do turismo cultural e histórico.</p>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <a href="#inscricao" class="btn btn-primary btn-large">Garantir Minha Vaga</a>
+                        <a href="#info" class="btn btn-outline">Mais Informações</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="Circuito Empreenda Tur Logo">
+                    <p>Uma iniciativa da FENAE Brasil para impulsionar o turismo e o empreendedorismo.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><strong>Sede Nacional:</strong> Rodovia DF-280, Km 3.5, Quadra 01, Lote 05, Sala 101, Recanto das Emas, Brasília – DF</p>
+                    <p><strong>Sede SP:</strong> R Silveira Martins N°53, Ed. Maria Adelaide, 3° andar, Sé, São Paulo</p>
+                    <p><strong>Telefone:</strong> (11) 95678-3744 / (61) 998678127</p>
+                    <p><strong>Email:</strong> fenae@fenaebrasil.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Circuito Empreenda Tur. Todos os direitos reservados. Realização: FENAE Brasil.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="engaging.js"></script>
+</body>
+</html>
+

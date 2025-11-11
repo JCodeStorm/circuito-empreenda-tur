@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Circuito Empreenda Tur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Circuito Empreenda Tur" class="logo-img">
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="eventos.html" class="nav-link">Eventos</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="galeria.html" class="nav-link active">Galeria</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="cadastro.html" class="btn btn-primary">Cadastre-se</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb fade-in-up">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Galeria</span>
+                </div>
+                <h1 class="page-title fade-in-up delay-1">Galeria de Momentos</h1>
+                <p class="page-subtitle fade-in-up delay-2">
+                    Reviva os melhores momentos dos nossos eventos anteriores
+                </p>
+            </div>
+        </section>
+
+        <!-- Gallery Filters -->
+        <section class="gallery-filters">
+            <div class="container">
+                <div class="filter-buttons reveal">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="eventos">Eventos</button>
+                    <button class="filter-btn" data-filter="networking">Networking</button>
+                    <button class="filter-btn" data-filter="palestras">Palestras</button>
+                    <button class="filter-btn" data-filter="destinos">Destinos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-grid">
+                    <!-- Eventos Anteriores -->
+                    <div class="gallery-item reveal" data-category="eventos networking">
+                        <div class="gallery-image">
+                            <img src="assets/galeria/evento1.jpg" alt="Circuito Empreenda Tur - Sergipe 2024" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Circuito Sergipe 2024</h3>
+                                    <p>Networking e apresentação dos destinos sergipanos</p>
+                                    <span class="gallery-date">Março 2024</span>
+                                </div>
+                                <button class="gallery-zoom" onclick="openLightbox('assets/galeria/evento1.jpg', 'Circuito Sergipe 2024')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="eventos">
+                        <div class="gallery-image">
+                            <img src="assets/galeria/evento2.webp" alt="Feira Internacional de Turismo" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Feira Internacional</h3>
+                                    <p>Participação em feira internacional de turismo</p>
+                                    <span class="gallery-date">Janeiro 2024</span>
+                                </div>
+                                <button class="gallery-zoom" onclick="openLightbox('assets/galeria/evento2.webp', 'Feira Internacional')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="eventos networking">
+                        <div class="gallery-image">
+                            <img src="assets/galeria/evento3.jpg" alt="Exposição Paraíba Turismo" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Expo Paraíba 2024</h3>
+                                    <p>Exposição dos destinos paraibanos</p>
+                                    <span class="gallery-date">Fevereiro 2024</span>
+                                </div>
+                                <button class="gallery-zoom" onclick="openLightbox('assets/galeria/evento3.jpg', 'Expo Paraíba 2024')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Destinos -->
+                    <div class="gallery-item reveal" data-category="destinos">
+                        <div class="gallery-image">
+                            <img src="assets/destinos/gramado.jpg" alt="Gramado, Rio Grande do Sul" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Gramado, RS</h3>
+                                    <p>Serra Gaúcha e arquitetura europeia</p>
+                                    <span class="gallery-date">Próximo evento: Dezembro 2025</span>
+                                </div>
+                                <button class="gallery-zoom" onclick="openLightbox('assets/destinos/gramado.jpg', 'Gramado, RS')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="destinos">
+                        <div class="gallery-image">
+                            <img src="assets/destinos/camacari.jpg" alt="Camaçari, Bahia" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Camaçari, BA</h3>
+                                    <p>Costa dos Coqueiros e praias paradisíacas</p>
+                                    <span class="gallery-date">Próximo evento: Janeiro 2026</span>
+                                </div>
+                                <button class="gallery-zoom" onclick="openLightbox('assets/destinos/camacari.jpg', 'Camaçari, BA')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="destinos">
+                        <div class="gallery-image">
+                            <img src="assets/destinos/foz-iguacu.jpg" alt="Foz do Iguaçu, Paraná" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Foz do Iguaçu, PR</h3>
+                                    <p>Cataratas e maravilhas naturais</p>
+                                    <span class="gallery-date">Próximo evento: Fevereiro 2026</span>
+                                </div>
+                                <button class="gallery-zoom" onclick="openLightbox('assets/destinos/foz-iguacu.jpg', 'Foz do Iguaçu, PR')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="destinos">
+                        <div class="gallery-image">
+                            <img src="assets/destinos/bonito.jpg" alt="Bonito, Mato Grosso do Sul" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Bonito, MS</h3>
+                                    <p>Ecoturismo e águas cristalinas</p>
+                                    <span class="gallery-date">Próximo evento: Março 2026</span>
+                                </div>
+                                <button class="gallery-zoom" onclick="openLightbox('assets/destinos/bonito.jpg', 'Bonito, MS')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="destinos">
+                        <div class="gallery-image">
+                            <img src="assets/destinos/paraty.jpg" alt="Paraty, Rio de Janeiro" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Paraty, RJ</h3>
+                                    <p>Centro histórico e cultura colonial</p>
+                                    <span class="gallery-date">Próximo evento: Abril 2026</span>
+                                </div>
+                                <button class="gallery-zoom" onclick="openLightbox('assets/destinos/paraty.jpg', 'Paraty, RJ')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="destinos">
+                        <div class="gallery-image">
+                            <img src="assets/destinos/jericoacoara.jpg" alt="Jericoacoara, Ceará" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Jericoacoara, CE</h3>
+                                    <p>Dunas e pôr do sol inesquecível</p>
+                                    <span class="gallery-date">Próximo evento: Maio 2026</span>
+                                </div>
+                                <button class="gallery-zoom" onclick="openLightbox('assets/destinos/jericoacoara.jpg', 'Jericoacoara, CE')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Palestras fictícias -->
+                    <div class="gallery-item reveal" data-category="palestras">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800" alt="Palestra sobre Turismo Sustentável" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Turismo Sustentável</h3>
+                                    <p>Palestra sobre práticas sustentáveis no turismo</p>
+                                    <span class="gallery-date">Novembro 2024</span>
+                                </div>
+                                <button class="gallery-zoom" onclick="openLightbox('https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800', 'Turismo Sustentável')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="palestras networking">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800" alt="Mesa redonda sobre inovação" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Inovação no Turismo</h3>
+                                    <p>Mesa redonda sobre tecnologia e inovação</p>
+                                    <span class="gallery-date">Outubro 2024</span>
+                                </div>
+                                <button class="gallery-zoom" onclick="openLightbox('https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800', 'Inovação no Turismo')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="networking">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800" alt="Networking entre profissionais" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Networking Profissional</h3>
+                                    <p>Momento de conexão entre profissionais</p>
+                                    <span class="gallery-date">Setembro 2024</span>
+                                </div>
+                                <button class="gallery-zoom" onclick="openLightbox('https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800', 'Networking Profissional')">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="gallery-actions reveal">
+                    <button class="btn btn-outline btn-large" id="loadMoreBtn">
+                        <i class="fas fa-plus"></i>
+                        Carregar Mais Fotos
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Stats -->
+        <section class="gallery-stats">
+            <div class="container">
+                <div class="stats-grid reveal">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="150">0</div>
+                        <div class="stat-label">Fotos Compartilhadas</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="12">0</div>
+                        <div class="stat-label">Eventos Realizados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Destinos Visitados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="5000">0</div>
+                        <div class="stat-label">Participantes</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <div class="lightbox-actions">
+                    <button class="btn btn-outline" onclick="downloadImage()">
+                        <i class="fas fa-download"></i>
+                        Baixar
+                    </button>
+                    <button class="btn btn-primary" onclick="shareImage()">
+                        <i class="fas fa-share"></i>
+                        Compartilhar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Circuito Empreenda Tur" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description">
+                        O maior circuito de experiências em turismo do Brasil. 
+                        Conectando pessoas, destinos e oportunidades.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Eventos</h4>
+                    <ul class="footer-links">
+                        <li><a href="eventos.html#gramado">Gramado, RS</a></li>
+                        <li><a href="eventos.html#camacari">Camaçari, BA</a></li>
+                        <li><a href="eventos.html#foz">Foz do Iguaçu, PR</a></li>
+                        <li><a href="eventos.html#bonito">Bonito, MS</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> contato@circuitoempreendatur.com.br</p>
+                        <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
+                        <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Circuito Empreenda Tur. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuito Empreenda Tur - O Maior Evento de Turismo do Brasil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/logo.png" alt="Circuito Empreenda Tur" class="logo-img"></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="eventos.html" class="nav-link">Eventos</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="meus_certificados.html" class="nav-link">Meus Certificados</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="cadastro.html" class="btn btn-primary">Cadastre-se</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="container">
+                    <div class="highlight-badge">Evento Imperdível!</div>
+                    <h1 class="hero-title fade-in-up">
+                        Descubra o <span class="typing-effect" data-speed="150">Brasil como você nunca viu</span>
+                    </h1>
+                    <p class="hero-subtitle fade-in-up delay-1">O maior circuito de experiências em turismo do país. Conecte-se, aprenda e empreenda.</p>
+                    
+                    <!-- Contador regressivo -->
+                    <div class="countdown-timer fade-in-up delay-2" data-target-date="2025-11-08T10:00:00">
+                        <h4>⏰ Próximo Evento em Gramado</h4>
+                        <div class="countdown-display"></div>
+                    </div>
+                    
+                    <div class="hero-buttons fade-in-up delay-3">
+                        <a href="#proximo-evento" class="btn cta-primary btn-pulse shine-effect">
+                            <i class="fas fa-ticket-alt"></i>
+                            Garanta Sua Vaga Agora
+                        </a>
+                        <a href="eventos.html" class="btn btn-outline btn-large enhanced-hover">Cronograma Completo</a>
+                    </div>
+                    
+                    <div class="limited-spots fade-in-up delay-4">
+                        <i class="fas fa-fire"></i>
+                        Apenas 50 vagas restantes!
+                    </div>
+                    
+                    <!-- Barra de progresso de inscrições -->
+                    <div class="progress-container fade-in-up delay-5" style="margin-top: 2rem;">
+                        <p style="margin-bottom: 0.5rem; color: white; font-size: 0.9rem; opacity: 0.9;">
+                            <strong>85% das vagas já foram preenchidas</strong>
+                        </p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- Próximo Evento -->
+        <section id="proximo-evento" class="next-event">
+            <div class="container">
+                <h2 class="section-title reveal">Próxima Parada</h2>
+                <div class="event-highlight reveal">
+                    <div class="event-image">
+                        <img src="assets/destinos/gramado.jpg" alt="Gramado, RS" loading="lazy">
+                        <div class="event-badge">Próximo Evento</div>
+                    </div>
+                    <div class="event-details">
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Gramado, RS</span>
+                        </div>
+                        <div class="event-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>08 a 10 de Novembro de 2025</span>
+                        </div>
+                        <h3 class="event-title">Encantos da Serra Gaúcha: Turismo de Experiência</h3>
+                        <p class="event-description">
+                            Junte-se a nós para três dias de imersão na capital do turismo de inverno no Brasil. 
+                            Explore as tendências em hotelaria de charme, enoturismo e gastronomia local. 
+                            Uma oportunidade única para networking e negócios na deslumbrante Serra Gaúcha.
+                        </p>
+                        <div class="event-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <span>500+ Participantes</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-microphone"></i>
+                                <span>20+ Palestrantes</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-clock"></i>
+                                <span>3 Dias Intensivos</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <a href="#inscricao" class="btn btn-primary">Quero Participar</a>
+                            <a href="eventos.html#gramado" class="btn btn-outline">Ver Programação</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cronograma de Eventos -->
+        <section class="events-overview">
+            <div class="container">
+                <h2 class="section-title reveal">Conheça Todas as Etapas do Circuito</h2>
+                <p class="section-subtitle reveal">Explore os destinos que farão parte da nossa jornada pelo Brasil</p>
+                
+                <div class="events-grid">
+                    <div class="event-card reveal">
+                        <div class="card-image">
+                            <img src="assets/destinos/camacari.jpg" alt="Camaçari, BA" loading="lazy">
+                            <div class="card-overlay">
+                                <a href="eventos.html#camacari" class="card-link">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-date">Janeiro 2026</div>
+                            <h3 class="card-title">Camaçari, BA</h3>
+                            <p class="card-theme">Sol, Mar e Negócios</p>
+                            <p class="card-description">Evento pé na areia focado em turismo de lazer, resorts e cultura baiana.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card reveal">
+                        <div class="card-image">
+                            <img src="assets/destinos/foz-do-iguacu.jpg" alt="Foz do Iguaçu, PR" loading="lazy">
+                            <div class="card-overlay">
+                                <a href="eventos.html#foz" class="card-link">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-date">Março 2026</div>
+                            <h3 class="card-title">Foz do Iguaçu, PR</h3>
+                            <p class="card-theme">Ecoturismo e Sustentabilidade</p>
+                            <p class="card-description">Com as Cataratas como pano de fundo, foco em práticas sustentáveis.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card reveal">
+                        <div class="card-image">
+                            <img src="assets/destinos/bonito.jpg" alt="Bonito, MS" loading="lazy">
+                            <div class="card-overlay">
+                                <a href="eventos.html#bonito" class="card-link">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-date">Maio 2026</div>
+                            <h3 class="card-title">Bonito, MS</h3>
+                            <p class="card-theme">Aventura e Natureza</p>
+                            <p class="card-description">Turismo de aventura, flutuação e observação da vida selvagem.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card reveal">
+                        <div class="card-image">
+                            <img src="assets/destinos/paraty.jpg" alt="Paraty, RJ" loading="lazy">
+                            <div class="card-overlay">
+                                <a href="eventos.html#paraty" class="card-link">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-date">Julho 2026</div>
+                            <h3 class="card-title">Paraty, RJ</h3>
+                            <p class="card-theme">Cultura e História</p>
+                            <p class="card-description">Mergulho na história colonial com foco em turismo cultural.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section reveal">
+                    <a href="eventos.html" class="btn btn-primary btn-large">Ver Cronograma Completo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre o Circuito -->
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text reveal">
+                        <h2 class="section-title">Mais que um Evento, um Movimento</h2>
+                        <p class="about-description">
+                            O <strong>Circuito Empreenda Tur</strong> nasceu da paixão por conectar pessoas e destinos. 
+                            Nossa missão é fortalecer o turismo nacional, capacitando empreendedores e revelando 
+                            as riquezas culturais e naturais do Brasil.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">5</div>
+                                <div class="stat-label">Destinos Únicos</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">2500+</div>
+                                <div class="stat-label">Participantes Esperados</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100+</div>
+                                <div class="stat-label">Palestrantes Especialistas</div>
+                            </div>
+                        </div>
+                        <a href="sobre.html" class="btn btn-outline">Conheça Nossa História</a>
+                    </div>
+                    <div class="about-image reveal">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800" alt="Paisagem brasileira" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Circuito Empreenda Tur" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description">
+                        O maior circuito de experiências em turismo do Brasil. 
+                        Conectando pessoas, destinos e oportunidades.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Eventos</h4>
+                    <ul class="footer-links">
+                        <li><a href="eventos.html#gramado">Gramado, RS</a></li>
+                        <li><a href="eventos.html#camacari">Camaçari, BA</a></li>
+                        <li><a href="eventos.html#foz">Foz do Iguaçu, PR</a></li>
+                        <li><a href="eventos.html#bonito">Bonito, MS</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Sede Nacional:</strong> Rodovia DF-280, Km 3.5, Quadra 01, Lote 05, Sala 101, Recanto das Emas, Brasília – DF</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Sede SP:</strong> R Silveira Martins N°53, Ed. Maria Adelaide, 3° andar, Sé, São Paulo</p>
+                        <p><i class="fas fa-phone"></i> (11) 95678-3744 / (61) 998678127</p>
+                        <p><i class="fas fa-envelope"></i> fenae@fenaebrasil.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Circuito Empreenda Tur. Todos os direitos reservados. Realização: FENAE Brasil.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top" class="scroll-to-top-btn"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+    <script src="engaging.js"></script>
+</body>
+</html>
+

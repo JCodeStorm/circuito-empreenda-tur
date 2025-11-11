@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Circuito Empreenda Tur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Circuito Empreenda Tur" class="logo-img">
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="eventos.html" class="nav-link">Eventos</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li><a href="contato.html" class="nav-link active">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="cadastro.html" class="btn btn-primary">Cadastre-se</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb fade-in-up">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Contato</span>
+                </div>
+                <h1 class="page-title fade-in-up delay-1">Entre em Contato</h1>
+                <p class="page-subtitle fade-in-up delay-2">
+                    Estamos aqui para ajudar você a fazer parte do maior circuito de turismo do Brasil
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-container">
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper reveal">
+                        <div class="contact-header">
+                            <h2>Envie sua Mensagem</h2>
+                            <p>Preencha o formulário abaixo e nossa equipe entrará em contato com você em breve.</p>
+                        </div>
+
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nome completo *</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-user"></i>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Telefone</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-phone"></i>
+                                        <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="company">Empresa</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-building"></i>
+                                        <input type="text" id="company" name="company">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Assunto *</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-tag"></i>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Selecione um assunto</option>
+                                        <option value="Informações sobre eventos">Informações sobre eventos</option>
+                                        <option value="Inscrição em eventos">Inscrição em eventos</option>
+                                        <option value="Parcerias e patrocínios">Parcerias e patrocínios</option>
+                                        <option value="Imprensa">Imprensa</option>
+                                        <option value="Suporte técnico">Suporte técnico</option>
+                                        <option value="Outros">Outros</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mensagem *</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-comment"></i>
+                                    <textarea id="message" name="message" rows="6" placeholder="Descreva sua dúvida ou solicitação..." required></textarea>
+                                </div>
+                                <div class="char-counter">
+                                    <span id="charCount">0</span>/2000 caracteres
+                                </div>
+                            </div>
+
+                            <div class="form-options">
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" id="newsletter">
+                                    <span class="checkmark"></span>
+                                    Quero receber novidades sobre eventos e oportunidades
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large btn-full">
+                                <span class="btn-text">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Enviar Mensagem
+                                </span>
+                                <span class="btn-loading" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Enviando...
+                                </span>
+                            </button>
+                        </form>
+
+                        <div id="contactMessage" class="message" style="display: none;"></div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info-wrapper reveal">
+                        <div class="contact-info-header">
+                            <h3>Informações de Contato</h3>
+                            <p>Outras formas de entrar em contato conosco</p>
+                        </div>
+
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Endereço</h4>
+                                    <p>Av. Paulista, 1000 - Bela Vista<br>São Paulo, SP - CEP 01310-100</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Telefone</h4>
+                                    <p>(11) 9999-9999<br>Segunda a sexta, 9h às 18h</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <p>contato@circuitoempreendatur.com.br<br>Resposta em até 24 horas</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Horário de Atendimento</h4>
+                                    <p>Segunda a sexta: 9h às 18h<br>Sábado: 9h às 12h</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social">
+                            <h4>Siga-nos nas Redes Sociais</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>@circuitoempreendatur</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-facebook"></i>
+                                    <span>Circuito Empreenda Tur</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>Circuito Empreenda Tur</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>Circuito Empreenda Tur</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Perguntas Frequentes</h2>
+                    <p class="section-subtitle">Encontre respostas para as dúvidas mais comuns</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item reveal">
+                        <button class="faq-question">
+                            <span>Como posso me inscrever nos eventos?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Para se inscrever nos eventos, você precisa criar uma conta em nosso site e acessar a página de eventos. Lá você encontrará todos os detalhes e poderá fazer sua inscrição online.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question">
+                            <span>Qual o valor dos eventos?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Os valores variam de acordo com o evento e o tipo de participação. Oferecemos diferentes modalidades de inscrição, incluindo descontos para grupos e inscrições antecipadas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question">
+                            <span>Os eventos incluem hospedagem?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Alguns pacotes incluem hospedagem, enquanto outros oferecem apenas a participação no evento. Verifique os detalhes específicos de cada evento na página correspondente.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question">
+                            <span>Como posso me tornar um parceiro?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Entre em contato conosco através do formulário acima selecionando "Parcerias e patrocínios" como assunto. Nossa equipe comercial entrará em contato para discutir as oportunidades disponíveis.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question">
+                            <span>Posso cancelar minha inscrição?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim, você pode cancelar sua inscrição através da sua área pessoal no site. As condições de reembolso variam de acordo com a antecedência do cancelamento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Nossa Localização</h2>
+                    <p class="section-subtitle">Visite nosso escritório em São Paulo</p>
+                </div>
+
+                <div class="map-container reveal">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Mapa Interativo</h3>
+                        <p>Av. Paulista, 1000 - Bela Vista, São Paulo, SP</p>
+                        <button class="btn btn-outline">
+                            <i class="fas fa-directions"></i>
+                            Ver no Google Maps
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Circuito Empreenda Tur" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description">
+                        O maior circuito de experiências em turismo do Brasil. 
+                        Conectando pessoas, destinos e oportunidades.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Eventos</h4>
+                    <ul class="footer-links">
+                        <li><a href="eventos.html#gramado">Gramado, RS</a></li>
+                        <li><a href="eventos.html#camacari">Camaçari, BA</a></li>
+                        <li><a href="eventos.html#foz">Foz do Iguaçu, PR</a></li>
+                        <li><a href="eventos.html#bonito">Bonito, MS</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> contato@circuitoempreendatur.com.br</p>
+                        <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
+                        <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Circuito Empreenda Tur. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
+

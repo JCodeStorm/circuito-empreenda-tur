@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Circuito Empreenda Tur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Circuito Empreenda Tur" class="logo-img">
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="eventos.html" class="nav-link">Eventos</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="cadastro.html" class="btn btn-primary">Cadastre-se</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Blog Header -->
+        <section class="blog-header">
+            <div class="container">
+                <div class="breadcrumb fade-in-up">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Blog</span>
+                </div>
+                <h1 class="page-title fade-in-up delay-1">Blog de Turismo</h1>
+                <p class="page-subtitle fade-in-up delay-2">
+                    Descubra destinos incríveis, dicas de viagem e as últimas tendências do turismo brasileiro
+                </p>
+                
+                <!-- Blog Search -->
+                <div class="blog-search fade-in-up delay-3">
+                    <div class="search-wrapper">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="blogSearchInput" placeholder="Buscar artigos...">
+                        <button type="button" id="clearBlogSearch" style="display: none;">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Filters -->
+        <section class="blog-filters">
+            <div class="container">
+                <div class="filter-wrapper reveal">
+                    <div class="filter-categories">
+                        <button class="filter-btn active" data-category="all">Todos</button>
+                        <button class="filter-btn" data-category="destinos">Destinos</button>
+                        <button class="filter-btn" data-category="dicas">Dicas de Viagem</button>
+                        <button class="filter-btn" data-category="cultura">Cultura</button>
+                        <button class="filter-btn" data-category="gastronomia">Gastronomia</button>
+                        <button class="filter-btn" data-category="aventura">Aventura</button>
+                        <button class="filter-btn" data-category="eventos">Eventos</button>
+                    </div>
+                    
+                    <div class="filter-sort">
+                        <select id="sortSelect">
+                            <option value="recent">Mais Recentes</option>
+                            <option value="popular">Mais Populares</option>
+                            <option value="alphabetical">A-Z</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Article -->
+        <section class="featured-article">
+            <div class="container">
+                <div class="featured-wrapper reveal">
+                    <div class="featured-image">
+                        <img src="assets/destinos/gramado.jpg" alt="Gramado no inverno" loading="lazy">
+                        <div class="featured-badge">
+                            <i class="fas fa-star"></i>
+                            Artigo em Destaque
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <div class="article-meta">
+                            <span class="category">Destinos</span>
+                            <span class="date">15 de Dezembro, 2025</span>
+                            <span class="read-time">8 min de leitura</span>
+                        </div>
+                        <h2>Gramado no Inverno: Um Guia Completo para a Temporada Mais Mágica</h2>
+                        <p>Descubra por que Gramado se transforma no destino mais encantador do Brasil durante o inverno. Das decorações natalinas às experiências gastronômicas únicas, explore tudo que a Serra Gaúcha tem a oferecer na estação mais romântica do ano.</p>
+                        <div class="article-stats">
+                            <div class="stat">
+                                <i class="fas fa-eye"></i>
+                                <span>2.5k visualizações</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-heart"></i>
+                                <span>156 curtidas</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-comment"></i>
+                                <span>23 comentários</span>
+                            </div>
+                        </div>
+                        <a href="blog-article.html?id=gramado-inverno" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i>
+                            Ler Artigo Completo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="blog-grid-section">
+            <div class="container">
+                <div class="blog-grid">
+                    <!-- Article 1 -->
+                    <article class="blog-card reveal" data-category="dicas">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Dicas de viagem" loading="lazy">
+                            <div class="blog-category">Dicas</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">12 de Dezembro, 2025</span>
+                                <span class="blog-read-time">5 min</span>
+                            </div>
+                            <h3>10 Dicas Essenciais para Viajar pelo Brasil</h3>
+                            <p>Planeje sua próxima aventura com essas dicas fundamentais que todo viajante deveria conhecer antes de explorar as maravilhas do nosso país.</p>
+                            <div class="blog-stats">
+                                <span><i class="fas fa-eye"></i> 1.8k</span>
+                                <span><i class="fas fa-heart"></i> 89</span>
+                            </div>
+                            <a href="blog-article.html?id=dicas-viagem-brasil" class="blog-link">Ler mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="blog-card reveal" data-category="destinos">
+                        <div class="blog-image">
+                            <img src="assets/destinos/bonito.jpg" alt="Bonito MS" loading="lazy">
+                            <div class="blog-category">Destinos</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">10 de Dezembro, 2025</span>
+                                <span class="blog-read-time">7 min</span>
+                            </div>
+                            <h3>Bonito: O Paraíso do Ecoturismo no Brasil</h3>
+                            <p>Mergulhe nas águas cristalinas e descubra por que Bonito é considerado um dos destinos de ecoturismo mais impressionantes do mundo.</p>
+                            <div class="blog-stats">
+                                <span><i class="fas fa-eye"></i> 3.2k</span>
+                                <span><i class="fas fa-heart"></i> 201</span>
+                            </div>
+                            <a href="blog-article.html?id=bonito-ecoturismo" class="blog-link">Ler mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="blog-card reveal" data-category="gastronomia">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Gastronomia brasileira" loading="lazy">
+                            <div class="blog-category">Gastronomia</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">8 de Dezembro, 2025</span>
+                                <span class="blog-read-time">6 min</span>
+                            </div>
+                            <h3>Sabores do Brasil: Uma Jornada Gastronômica</h3>
+                            <p>Explore a rica diversidade culinária brasileira e descubra pratos típicos que definem a identidade gastronômica de cada região.</p>
+                            <div class="blog-stats">
+                                <span><i class="fas fa-eye"></i> 2.1k</span>
+                                <span><i class="fas fa-heart"></i> 134</span>
+                            </div>
+                            <a href="blog-article.html?id=gastronomia-brasileira" class="blog-link">Ler mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="blog-card reveal" data-category="cultura">
+                        <div class="blog-image">
+                            <img src="assets/destinos/paraty.jpg" alt="Paraty histórica" loading="lazy">
+                            <div class="blog-category">Cultura</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">5 de Dezembro, 2025</span>
+                                <span class="blog-read-time">9 min</span>
+                            </div>
+                            <h3>Paraty: Onde a História Encontra o Mar</h3>
+                            <p>Caminhe pelas ruas de pedra e descubra os segredos coloniais desta cidade que preserva séculos de história brasileira.</p>
+                            <div class="blog-stats">
+                                <span><i class="fas fa-eye"></i> 1.9k</span>
+                                <span><i class="fas fa-heart"></i> 112</span>
+                            </div>
+                            <a href="blog-article.html?id=paraty-historia" class="blog-link">Ler mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="blog-card reveal" data-category="aventura">
+                        <div class="blog-image">
+                            <img src="assets/destinos/foz-iguacu.jpg" alt="Cataratas do Iguaçu" loading="lazy">
+                            <div class="blog-category">Aventura</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">3 de Dezembro, 2025</span>
+                                <span class="blog-read-time">8 min</span>
+                            </div>
+                            <h3>Cataratas do Iguaçu: Aventura e Natureza Exuberante</h3>
+                            <p>Sinta a força da natureza nas quedas d'água mais impressionantes da América do Sul e viva experiências inesquecíveis.</p>
+                            <div class="blog-stats">
+                                <span><i class="fas fa-eye"></i> 4.1k</span>
+                                <span><i class="fas fa-heart"></i> 287</span>
+                            </div>
+                            <a href="blog-article.html?id=cataratas-iguacu" class="blog-link">Ler mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="blog-card reveal" data-category="eventos">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Eventos de turismo" loading="lazy">
+                            <div class="blog-category">Eventos</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">1 de Dezembro, 2025</span>
+                                <span class="blog-read-time">4 min</span>
+                            </div>
+                            <h3>Como Aproveitar ao Máximo os Eventos de Turismo</h3>
+                            <p>Descubra estratégias para maximizar sua experiência em eventos de turismo e fazer networking efetivo no setor.</p>
+                            <div class="blog-stats">
+                                <span><i class="fas fa-eye"></i> 1.5k</span>
+                                <span><i class="fas fa-heart"></i> 78</span>
+                            </div>
+                            <a href="blog-article.html?id=eventos-turismo" class="blog-link">Ler mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 7 -->
+                    <article class="blog-card reveal" data-category="destinos">
+                        <div class="blog-image">
+                            <img src="assets/destinos/jericoacoara.jpg" alt="Jericoacoara" loading="lazy">
+                            <div class="blog-category">Destinos</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">28 de Novembro, 2025</span>
+                                <span class="blog-read-time">6 min</span>
+                            </div>
+                            <h3>Jericoacoara: O Pôr do Sol Mais Famoso do Brasil</h3>
+                            <p>Explore as dunas douradas e as lagoas cristalinas deste paraíso cearense que encanta visitantes do mundo inteiro.</p>
+                            <div class="blog-stats">
+                                <span><i class="fas fa-eye"></i> 2.8k</span>
+                                <span><i class="fas fa-heart"></i> 189</span>
+                            </div>
+                            <a href="blog-article.html?id=jericoacoara-por-do-sol" class="blog-link">Ler mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 8 -->
+                    <article class="blog-card reveal" data-category="dicas">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Viagem sustentável" loading="lazy">
+                            <div class="blog-category">Dicas</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">25 de Novembro, 2025</span>
+                                <span class="blog-read-time">7 min</span>
+                            </div>
+                            <h3>Turismo Sustentável: Como Viajar Conscientemente</h3>
+                            <p>Aprenda práticas de turismo responsável que preservam o meio ambiente e beneficiam as comunidades locais.</p>
+                            <div class="blog-stats">
+                                <span><i class="fas fa-eye"></i> 1.7k</span>
+                                <span><i class="fas fa-heart"></i> 95</span>
+                            </div>
+                            <a href="blog-article.html?id=turismo-sustentavel" class="blog-link">Ler mais</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More -->
+                <div class="blog-load-more reveal">
+                    <button class="btn btn-outline btn-large" id="loadMorePosts">
+                        <i class="fas fa-plus"></i>
+                        Carregar Mais Artigos
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription -->
+        <section class="blog-newsletter">
+            <div class="container">
+                <div class="newsletter-wrapper reveal">
+                    <div class="newsletter-content">
+                        <h2>Não Perca Nenhuma Novidade</h2>
+                        <p>Receba os melhores artigos sobre turismo diretamente no seu email</p>
+                        
+                        <form class="newsletter-form" id="newsletterForm">
+                            <div class="newsletter-input">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" placeholder="Seu melhor email" required>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Inscrever-se
+                                </button>
+                            </div>
+                            <p class="newsletter-disclaimer">
+                                Enviamos apenas conteúdo de qualidade. Sem spam, prometemos!
+                            </p>
+                        </form>
+                    </div>
+                    
+                    <div class="newsletter-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5.2k</div>
+                            <div class="stat-label">Inscritos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Satisfação</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2x</div>
+                            <div class="stat-label">Por semana</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Circuito Empreenda Tur" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description">
+                        O maior circuito de experiências em turismo do Brasil. 
+                        Conectando pessoas, destinos e oportunidades.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Categorias do Blog</h4>
+                    <ul class="footer-links">
+                        <li><a href="blog.html?category=destinos">Destinos</a></li>
+                        <li><a href="blog.html?category=dicas">Dicas de Viagem</a></li>
+                        <li><a href="blog.html?category=cultura">Cultura</a></li>
+                        <li><a href="blog.html?category=gastronomia">Gastronomia</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> contato@circuitoempreendatur.com.br</p>
+                        <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
+                        <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Circuito Empreenda Tur. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>
+

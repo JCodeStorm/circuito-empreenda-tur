@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Certificados - Circuito Empreenda Tur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/logo.png" alt="Circuito Empreenda Tur" class="logo-img"></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="eventos.html" class="nav-link">Eventos</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="meus_certificados.html" class="nav-link active">Meus Certificados</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema"><i class="fas fa-sun"></i></button>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="cadastro.html" class="btn btn-primary">Cadastre-se</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb fade-in-up"><a href="index.html">Home</a> <span>/</span> <span>Meus Certificados</span></div>
+                <h1 class="page-title fade-in-up delay-1">Meus Certificados</h1>
+                <p class="page-subtitle fade-in-up delay-2">Visualize e baixe os certificados dos cursos que você concluiu.</p>
+            </div>
+        </section>
+
+        <section class="certificates-list">
+            <div class="container">
+                <div id="certificates-container" class="grid-container">
+                    <!-- Certificados serão carregados aqui via JavaScript -->
+                    <p id="no-certificates-message" style="text-align: center; display: none;">Você ainda não possui certificados. Participe de nossos cursos!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="Circuito Empreenda Tur Logo">
+                    <p>Uma iniciativa da FENAE Brasil para impulsionar o turismo e o empreendedorismo.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="meus_certificados.html">Meus Certificados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><strong>Sede Nacional:</strong> Rodovia DF-280, Km 3.5, Quadra 01, Lote 05, Sala 101, Recanto das Emas, Brasília – DF</p>
+                    <p><strong>Sede SP:</strong> R Silveira Martins N°53, Ed. Maria Adelaide, 3° andar, Sé, São Paulo</p>
+                    <p><strong>Telefone:</strong> (11) 95678-3744 / (61) 998678127</p>
+                    <p><strong>Email:</strong> fenae@fenaebrasil.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Circuito Empreenda Tur. Todos os direitos reservados. Realização: FENAE Brasil.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="engaging.js"></script>
+    <script src="certificates.js"></script>
+</body>
+</html>
+
