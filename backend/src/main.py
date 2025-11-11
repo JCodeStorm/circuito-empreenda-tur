@@ -1,6 +1,7 @@
 import os
 import sys
 # DON'T CHANGE THIS !!!
+from flask import send_from_directory
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 from flask import Flask, send_from_directory
@@ -55,6 +56,14 @@ def serve(path):
         else:
             return "index.html not found", 404
 
+# Servir frontend estático da raiz relativa
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve_static(path):
+    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../'))  # Subir para raiz do repo
+    if path and os.path.exists(os.path.join(root_dir, path)):
+        return send_from_directory(root_dir, path)
+    return send_from_directory(root_dir, 'index.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
