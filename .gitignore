@@ -1,0 +1,10 @@
+# Pastas de ambiente virtual Python
+venv/
+__pycache__/
+
+# Arquivos de lock ou temporários
+*.log
+*.tmp
+
+# Se tiver backend com dependências
+backend/venv/
